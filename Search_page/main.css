@@ -178,3 +178,28 @@ input[type="submit"]:hover{
 .whole{
   animation: float 4s;
 }
+
+/* #cards{
+  display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+position: relative;
+}
+.card{
+  position: relative;
+  width: 100%;
+  box-shadow: 0 0 4px 3px rgb(174, 0, 255);
+  text-align: center;
+  padding: 1.5em;
+  margin-bottom: 2em;
+
+}
+.title{
+  font-size: 1.3rem;
+}
+.publ{
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 1em;
+  font-size: 1.2rem;
+} */
