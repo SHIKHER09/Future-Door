@@ -16,42 +16,26 @@
         <h3>Search </h3>
         <p style="text-align: center;">Search all your queries related to any research field,<br> any research article
           here.</p>
-        <!-- <div class="box">
-        </div> -->
-        <!-- <form> -->
-          <input type="text" id='city' name="box" placeholder="Search here...">
-          <input type="submit" onclick="get()" id='sub' name="" value="Search">
-          <div id="cards">
-            <!-- <div class="card"> -->
-            <!-- <h4>Title/Heading</h4>
-              <p>Author name</p>
-              <p>Content</p> -->
-            <!-- <div class="card">
-              <div class="card-header">
-                Quote
-              </div>
-              <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                  <p>A well-known quote, contained in a blockquote element.</p>
-                  <footer class="blockquote-footer"> <cite title="Source Title">Source Title</cite></footer>
-                </blockquote>
-              </div>
-            </div> -->
-            <!-- </div> -->
-          </div>
-        <!-- </form> -->
+
+        <input type="text" id='city' name="box" placeholder="Search here...">
+        <input type="submit" onclick="get()" id='sub' name="" value="Search">
+        <div id="cards">
+
+        </div>
+
       </div>
     </div>
     <div class="image">
       <img src="img2.0-removebg-preview.png" alt="image">
     </div>
   </div>
+  <!--------------------------------------------javascript------------------------------------------>
   <script>
 
     var button = document.getElementById('#sub');
     var input1 = document.getElementById('city');
     function get() {
-      //var input1 = document.getElementById('city');
+
 
       var apikey = 'a14ec5b259e323552ed01edf0f2b317832184c44cb2b7e5c06a8bcc76d062351';
 
@@ -64,11 +48,6 @@
         .then((actualdata) => {
           let data1 = "";
           actualdata.organic_results.map((values) => {
-            //     data1 += `<div class="card">
-            //     <h2 class="title">${values.title}</h2>
-            //     <p class="publ">${values.publication_info.summary}</p>
-            //     <p>${values.snippet}</p>
-            // </div>`
             data1 += `<div class="card" >
               <div class="card-header" >
                 <h4>${values.title}</h4>
