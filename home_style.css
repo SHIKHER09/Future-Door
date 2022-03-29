@@ -374,6 +374,14 @@ header .container {
   }
 }
 
+footer {
+  text-align: center;
+  text-decoration-color: whitesmoke;
+  padding: 3px;
+  background-color:#1f6f9e;
+  color: white;
+}
+
 @media screen and (max-width: 470px) {
   .container {
     padding: 0 1.5rem;
