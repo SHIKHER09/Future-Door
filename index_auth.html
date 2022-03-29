@@ -29,7 +29,7 @@
               <input type="password" id="PassInp"  placeholder="Password" />
             </div>
             <input type="submit"  id='Sub_Btn' value="Login" class="btn solid" />
-            <p class="social-text" id="flexSwitchCheckChecked">Or Sign in with Google Scholar</p>
+            <p class="social-text" id="flexSwitchCheckChecked">Or Sign in with Google </p>
             <div class="social-media">
               
               
@@ -53,8 +53,8 @@
               <i class="fas fa-lock"></i>
               <input type="password" id="passInp" placeholder="Password" />
             </div>
-            <input type="submit" id='sub_btn' class="btn" value="Sign up" />
-            <p class="social-text">Or Sign up with Google Scholar</p>
+            <input type="submit" id='sub_btn' class="btn" value="Sign up"href="./app/user-add.html" />
+            <p class="social-text">Or Sign up with Google </p>
             <div class="social-media">
               
           
@@ -158,6 +158,7 @@
 
         function RegisterUser(){
             if(!Validation()){
+              
                 return;
             };
              const dbRef = ref(db);
@@ -176,6 +177,7 @@
                      })
                      .then(()=>{
                          alert("user added successfully");
+                         window.location="./app/user-add.html";
                      })
                      .catch((error)=>{
                          alert("error"+error);
@@ -225,7 +227,7 @@
 
       if(!keepLoggedIn){
           sessionStorage.setItem('user',JSON.stringify(user));
-          window.location="index.html";
+          window.location="feed.html";
       }
 
       else{
