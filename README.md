@@ -2,6 +2,7 @@
 # Future-Door
 
 Begin your journey of research with us.Join the first ever platform made exclusively for the people who are intent in persuing research as their main expertise.
+As this project gives an ease at searching for research related information and research related people, In future this project can be used as a platform to hire research interns from various field of research. Also, as it provides an open chat system, people will get more aware about the current trends in research and what is happening globally in the field of research. We have planned to expand our project to reach a larger audience through Google ATS and user verdict.
 
 
 ## Acknowledgements
