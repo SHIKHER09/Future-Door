@@ -63,7 +63,7 @@
                            </div>
                            <div class="form-group">
                               <label>User Role:</label>
-                              <select name="type" class="selectpicker form-control" data-style="py-0">
+                              <select id ="selectRole" name="type" class="selectpicker form-control" data-style="py-0">
                                  <option>Select</option>
                                  <option>Web Designer</option>
                                  <option>Web Developer</option>
@@ -125,7 +125,7 @@
                                  </div>
                                  <div class="form-group col-sm-12">
                                     <label>Country:</label>
-                                    <select name="type" class="selectpicker form-control" data-style="py-0">
+                                    <select name="type" id="selectCountry" class="selectpicker form-control" data-style="py-0">
                                        <option>Select Country</option>
                                        <option>Caneda</option>
                                        <option>Noida</option>
@@ -171,10 +171,11 @@
                                     <input type="password" class="form-control" id="rpass" placeholder="Repeat Password ">
                                  </div>
                               </div>
-                              <div class="checkbox">
+                              <!-- <div class="checkbox">
                                  <label><input class="mr-2" type="checkbox">Enable Two-Factor-Authentication</label>
-                              </div>
-                              <button type="submit" class="btn btn-primary">Add New User</button>
+                              </div> -->
+                              <!-- <button type="submit" id="sub_btn" class="btn btn-primary">Add New User</button> -->
+                              <button type="submit" id="sub_btn">submit</button>
                            </form>
                         </div>
                      </div>
@@ -186,7 +187,7 @@
     </div>
     <!-- Wrapper End-->
 
-    <!-- Modal list start -->
+    <!-- Modal list start
     <div class="modal fade" role="dialog" aria-modal="true" id="new-project-modal">
         <div class="modal-dialog  modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -446,7 +447,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
    
     <!-- Backend Bundle JavaScript -->
     <script src="../assets/js/backend-bundle.min.js"></script>
@@ -466,5 +467,104 @@
     <script src="../assets/js/app.js"></script>
     
     <script src="../assets/vendor/moment.min.js"></script>
+
+<!-------------------------------FIREBASE CONFI--------------------------------->
+<script type="module">
+    // import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+    // import { getDatabase, set, ref, get, child } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-database.js";
+
+    // const firebaseConfig = {
+    //   apiKey: "AIzaSyDXpFUMl5TeRCSXWyW26rqVVT1owU2AImA",
+    //   authDomain: "fir-52f94.firebaseapp.com",
+    //   databaseURL: "https://fir-52f94-default-rtdb.firebaseio.com",
+    //   projectId: "fir-52f94",
+    //   storageBucket: "fir-52f94.appspot.com",
+    //   messagingSenderId: "634171813375",
+    //   appId: "1:634171813375:web:58452eab44df0531d8cbca"
+    // };
+  
+    // // Initialize Firebase
+    // const app = initializeApp(firebaseConfig);
+    // const db = getDatabase();
+
+   
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+  import { getDatabase, set, ref, get, child } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyCrasgQaWrXIIg5on-hRLu2hTj5aA07eiM",
+    authDomain: "profile-6891c.firebaseapp.com",
+    databaseURL: "https://profile-6891c-default-rtdb.firebaseio.com",
+    projectId: "profile-6891c",
+    storageBucket: "profile-6891c.appspot.com",
+    messagingSenderId: "237759699970",
+    appId: "1:237759699970:web:ee740709a3497ab3da9b1b"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase();
+
+
+
+//---------------------------------------REFERNCES---------------------------------//
+  const SelectRole = document.getElementById('selectRole');
+  const facebook = document.getElementById('furl');
+  const twitter = document.getElementById('turl');
+  const insta = document.getElementById('instaurl');
+  const linkdin = document.getElementById('lurl');
+  const fname = document.getElementById('fname');
+  const lname = document.getElementById('lname');
+  const add1 = document.getElementById('add1');
+  const add2 = document.getElementById('add2');
+  const company = document.getElementById('cname');
+  const country = document.getElementById('selectCountry');
+  const mobile = document.getElementById('mobno');
+  const altContact = document.getElementById('ltconno');
+  const email = document.getElementById('email');
+  const pinCode = document.getElementById('pno');
+  const city = document.getElementById('city');
+  const username = document.getElementById('uname');
+  const password = document.getElementById('pass');
+
+  const submit = document.getElementById('sub_btn');
+
+//----------------------------------------INSERT DATA ----------------------------------------//
+ 
+function InsertData(){
+    set(ref(db, "TheUsers/" + username.value),{
+         Username : username.value,
+         Password : password.value,
+         Role : SelectRole.value,
+         FacebookURL : facebook.value,
+         TwitterURL : twitter.value,
+         InstagramURL : insta.value,
+         LinkedinURL : linkdin.value,
+        //  FirstName : fname.value,
+        //  LastName : lname.value,
+        //  Address1 : add1.value,
+        //  Address2 : add2.value,
+        //  CompanyName : company.value,
+        //  Country: country.value,
+        //  Mobile : mobile.value, 
+        //  AlternateContact :  altContact.value,
+        //  Email : email.value,
+        //  PinCode : pinCode.value,
+        //  City : city.value,
+
+    })
+    .then(()=>{
+        alert("Data stored successfully");
+    })
+    .catch((error)=>{
+        alert("unsuccessful,error"+error);
+    });
+}
+//------------------------------------------------------ASSIGN EVENT TO BTN------------------------------------//
+submit.addEventListener('click',InsertData);
+
+</script>
+
+
   </body>
 </html>
