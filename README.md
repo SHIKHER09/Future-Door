@@ -47,6 +47,14 @@ Insert gif or link to demo
 ## Screenshots
 
 ![App Screenshot](./img/home.png)
+![App Screenshot](./img/Signup.png)
+![App Screenshot](./img/Feed.png)
+![App Screenshot](./img/before_Search.png)
+![App Screenshot](./img/after_Search.png)
+![App Screenshot](./img/profile1.png)
+![App Screenshot](./img/profile2.png)
+![App Screenshot](./img/home.png)
+![App Screenshot](./img/developers.png)
 
 
 ## Run Locally
