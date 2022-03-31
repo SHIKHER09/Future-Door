@@ -48,11 +48,13 @@ Insert gif or link to demo
 
 ## Screenshots
 
-![App Screenshot](./img/home.png)
+##![App Screenshot](./img/home.png)
 <--------------------------------------------------------------------------------------------------------------------------------------------------------->
-![App Screenshot](./img/Signup.png)
+
+##![App Screenshot](./img/Signup.png)
 <--------------------------------------------------------------------------------------------------------------------------------------------------------->
-![App Screenshot](./img/Feed.png)
+
+##![App Screenshot](./img/Feed.png)
 <------------------------------------------------------------------------------------------------------------------------------------------------------->
 ![App Screenshot](./img/before_Search.png)
 <------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -107,7 +109,7 @@ Start the server
 
 ## Documentation
 
-[Documentation](https://linktodocumentation)
+[Documentation](https://docs.google.com/document/d/1VfEn6LGgmd2CRSP0CbPrJqMmTQakZ9uT0iLXRZtJGxE/edit?usp=sharing)
 
 
 ## Authors
