@@ -7,10 +7,10 @@ As this project gives an ease at searching for research related information and 
 
 ## Acknowledgements
 
- - [I am over helmed in all humbleness and gratefulness to acknowledge my depth to all those who have helped me to put these ideas, well above the level of simplicity and into something concrete.
-I would like to express my special thanks of gratitude to my team and Google .who gave me the golden opportunity to do this wonderful project on the topic of rearch as (Future-Door), which also helped me in doing a lot of Research and i came to know about so many new things. I am really thankful to them.
+ - I am over helmed in all humbleness and gratefulness to acknowledge my depth to all those who have helped me to put these ideas, well above the level of simplicity and into something concrete.
+I would like to express my special thanks of gratitude to my team and Google .who gave me the golden opportunity to do this wonderful project on the topic of Research as (Future-Door), which also helped me in doing a lot of Research and i came to know about so many new things. I am really thankful to them.
 Any attempt at any level can ‘t be satisfactorily completed without the support and guidance of MY parents and friends.
-I would like to thank my parents who helped me a lot in gathering different information, collecting data and guiding me from time to time in making this project, despite of their busy schedules, they gave me different ideas in making this project unique.]()
+I would like to thank my parents who helped me a lot in gathering different information, collecting data and guiding me from time to time in making this project, despite of their busy schedules, they gave me different ideas in making this project unique.
 
 
 
